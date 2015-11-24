@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+{% block title %}
+{{ title }}
+{%- endblock %}
+
+{%- block header %}
+{{ super() }}
+<link rel="stylesheet" href="/stylesheets/newscenter.css">
+{%- endblock %}
+
+{% block content %}
+<section class="section clearfix">
+    <div class="left sidebar">
+        <img src="/images/newscenter.jpg" class="news-center" alt="新闻中心">
+        <ul class="menu">
+            <li><a class="active" href="#">计量动态</a></li>
+            <li><a href="#">质检新闻</a></li>
+            <li><a href="#">专题活动</a></li>
+        </ul>
+    </div>
+    <div class="right main">
+        <h3 class="right">新闻中心<small>News Center</small></h3>
+        <ul class="clearfix list">
+            <li>
+                <img src="/tmp/picture.jpg" class="left" />
+                <div class="news left">
+                    <div class="title clearfix">
+                        <h4 class="left"><a href="#">山东省能源计量管理高级研修班在德州举办</a></h4>
+                        <span class="date">----(2015-11-03)</span>
+                    </div>
+                    <p>新闻内容页具体展示新闻内容页具体展示新闻内容页具体展示新闻内容页具体展示新闻内容页具体展示新闻内容页具体展示</p>
+                </div>
+            </li>
+            <li>
+                <img src="/tmp/picture.jpg" class="left" />
+                <div class="news left">
+                    <div class="title clearfix">
+                        <h4 class="left"><a href="#">山东省能源计量管理高级研修班在德州举办</a></h4>
+                        <span class="date">----(2015-11-03)</span>
+                    </div>
+                    <p>新闻内容页具体展示新闻内容页具体展示新闻内容页具体展示新闻内容页具体展示新闻内容页具体展示新闻内容页具体展示</p>
+                </div>
+            </li>
+            <li>
+                <img src="/tmp/picture.jpg" class="left" />
+                <div class="news left">
+                    <div class="title clearfix">
+                        <h4 class="left"><a href="#">山东省能源计量管理高级研修班在德州举办</a></h4>
+                        <span class="date">----(2015-11-03)</span>
+                    </div>
+                    <p>新闻内容页具体展示新闻内容页具体展示新闻内容页具体展示新闻内容页具体展示新闻内容页具体展示新闻内容页具体展示</p>
+                </div>
+            </li>
+        </ul>
+
+        <div class="pagination">
+            <a href="#">首页</a>
+            <span class="current">1</span>
+            <a href="#">2</a>
+            <a href="#">下一页</a>
+            <a href="#">末页</a>
+            <span class="meta">共2页 18条</span>
+        </div>
+    </div>
+</section>
+{% endblock %}

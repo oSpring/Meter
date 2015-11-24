@@ -1,0 +1,141 @@
+{% extends 'layout.html' %}
+{% block title %}
+{{ title }}
+{%- endblock %}
+
+{%- block header %}
+{%- parent %}
+<link rel="stylesheet" href="/stylesheets/easyui.css">
+<link rel="stylesheet" href="/stylesheets/icon.css">
+<link rel="stylesheet" href="/stylesheets/price.css">
+{%- endblock %}
+
+{% block content %}
+<section class="section price clearfix">
+    <h3><img src="/images/logo.png" width="257px" height="41px;"/><span>收费标准查询</span></h3>
+    <h4>请输入查询条件</h4>
+    <form method="get" action="">
+        <label>
+            <span>器具类型：</span>
+            <select>
+                <option>1</option>
+                <option>1</option>
+                <option>1</option>
+            </select>
+        </label>
+        <label>
+            <span>器具编号：</span>
+            <input type="text" name="no" />
+        </label>
+        <label>
+            <span>器具名称：</span>
+            <input type="text" name="name" />
+        </label>
+        <input type="submit" class="submit" value="查询"/>
+    </form>
+    <div class="hot">
+        <span>热门搜索：</span><a href="#">计量方案</a> <a href="#">数据</a>
+    </div>
+    <div id="table">
+        <table class="easyui-datagrid" pagination="true" data-options="onLoadSuccess: onLoadSuccess" title="查询结果">
+            <thead>
+            <tr>
+                <th field="a" width="96">序号</th>
+                <th field="b" width="125">计量器具名称</th>
+                <th field="c" width="115">准确度</th>
+                <th field="d" width="125">等级</th>
+                <th field="e" width="155">测量范围</th>
+                <th field="f" width="155">收费单位</th>
+                <th field="g" width="170">收费标准/元</th>
+                <th field="h" width="135">备注</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>C-001-001</td>
+                <td>量块</td>
+                <td> </td>
+                <td>四等及以下</td>
+                <td>0<L≤100mm</td>
+                <td>块</td>
+                <td>15</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>C-001-001</td>
+                <td>量块</td>
+                <td> </td>
+                <td>四等及以下</td>
+                <td>0<L≤100mm</td>
+                <td>块</td>
+                <td>15</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>C-001-001</td>
+                <td>量块</td>
+                <td> </td>
+                <td>四等及以下</td>
+                <td>0<L≤100mm</td>
+                <td>块</td>
+                <td>15</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>C-001-001</td>
+                <td>量块</td>
+                <td> </td>
+                <td>四等及以下</td>
+                <td>0<L≤100mm</td>
+                <td>块</td>
+                <td>15</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>C-001-001</td>
+                <td>量块</td>
+                <td> </td>
+                <td>四等及以下</td>
+                <td>0<L≤100mm</td>
+                <td>块</td>
+                <td>15</td>
+                <td> </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+{%- parent %}
+<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/jquery.easyui.min.js"></script>
+<script type="text/javascript">
+    function onLoadSuccess(data){
+        var merges = [
+            {
+                index: 0,
+                rowspan: 3
+            },
+            {
+                index: 3,
+                rowspan: 2
+            }
+        ];
+        for(var i=0; i<merges.length; i++){
+            $(this).datagrid('mergeCells',{
+                index: merges[i].index,
+                field: 'a',
+                rowspan: merges[i].rowspan
+            });
+
+            $(this).datagrid('mergeCells',{
+                index: merges[i].index,
+                field: 'b',
+                rowspan: merges[i].rowspan
+            });
+        }
+    }
+</script>
+{% endblock %}
