@@ -5,7 +5,7 @@
 
 module.exports = {
     port    : 8080,
-    index   : ['index', 'default'],
+    index   : ['index.html', 'default.htm', 'default.html'],
     root    : 'E:/Andrew/serve-komplete/pubilc',
     extend  : ['html', 'htm'],
     nunjucks: {
@@ -14,6 +14,10 @@ module.exports = {
         trimBlocks      : false, // (default: false) 自动去除 block/tag 后面的换行符
         lstripBlocks    : false, // (default: false) 自动去除 block/tag 签名的空格
         watch           : false, // (默认值: false) 当模板变化时重新加载
-        noCache         : false  // (default: false) 不使用缓存，每次都重新编译
+        noCache         : true  // (default: false) 不使用缓存，每次都重新编译
+    },
+    data : function(data){
+        data.title = 'Komplete';
+        return data;
     }
 };

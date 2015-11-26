@@ -1,243 +1,74 @@
 {% extends 'layout.html' %}
-{% block title %}
-{{ title }}
+
+{% block title %}{{ title }}{%- endblock %}
+
+{%- block style %}
+{{ super() }}
+<link href="stylesheets/coming-sssoon.css" rel="stylesheet" />
 {%- endblock %}
 
-{%- block header %}
-{{ super() }}
-<link rel="stylesheet" href="/stylesheets/index.css">
-{%- endblock %}
 
 {% block content %}
-    <section class="section">
-        <div class="left-section login">
-            <img src="/images/mail_logo.png" class="mail-logo" alt="Mail Logo">
-            <form class="login-form">
-                <label>用户名：<input type="text" value="" name="username" class="input username" placeholder="请输入用户名"></label>
-                <label>　密码：<input type="password" value="" name="password" class="input password" placeholder="请输入密码"></label>
-                <input type="submit" class="btn submit" value="登 陆" />
-                <input type="reset" class="btn reset" value="取 消" />
-            </form>
-        </div>
-        <div class="search">
-            <img src="/images/search_logo.png" class="search-logo" alt="Search Logo">
-            <form class="search-form">
-                <input type="text" class="input search-input" placeholder="请输入关键字" />
-                <input type="submit" class="btn submit" value="全站搜索" />
-            </form>
-            <span>热门搜索:<a href="#">计量方案</a><a href="#">数据</a></span>
-        </div>
-    </section>
+<div class="main" style="background-image: url('images/rick.jpg')">
 
-    <section class="section one">
-        <div class="left-section">
-            <div class="title clearfix">
-                <h2 class="left">计量动态</h2>
-                <a href="#" class="right more">>></a>
-            </div>
-            <div class="list style1 clearfix">
-                <img src="/tmp/placeholder.jpg" class="img left" />
-                <ul class="left ul latest">
-                    <li><a href="#" class="">中国呼叫中心产业能力建设管</a><i class=" latest-icon">新</i></li>
-                    <li><a href="#" class="">中国呼叫中心产业能力建设管</a><i class=" latest-icon">新</i></li>
-                    <li><a href="#" class="">中国呼叫中心产业能力建设管</a><i class=" latest-icon">新</i></li>
-                </ul>
-            </div>
-            <ul class="ul clearfix">
-                <li><a href="#">中国呼叫中心产业能力建设管理规划工作组简报----2014/7/2</a></li>
-                <li><a href="#">中国呼叫中心产业能力建设管理规划工作组简报----2014/7/2</a></li>
-            </ul>
-        </div>
-        <div class="center-section special">
-            <h2>重要公告</h2>
-            <ul class="ul">
-                <li class="odd"><i class="icon"></i><a href="#" class="left">杜主任在中国呼叫中心产业能力建设管理规范</a><span class="right">2014-7-2</span></li>
-                <li class="even"><i class="icon"></i><a href="#" class="left">杜主任在中国呼叫中心产业能力建设管理规范</a><span class="right">2014-7-2</span></li>
-                <li class="odd"><i class="icon"></i><a href="#" class="left">杜主任在中国呼叫中心产业能力建设管理规范</a><span class="right">2014-7-2</span></li>
-                <li class="even"><i class="icon"></i><a href="#" class="left">杜主任在中国呼叫中心产业能力建设管理规范</a><span class="right">2014-7-2</span></li>
-                <li class="odd"><i class="icon"></i><a href="#" class="left">杜主任在中国呼叫中心产业能力建设管理规范</a><span class="right">2014-7-2</span></li>
-                <li class="even"><i class="icon"></i><a href="#" class="left">杜主任在中国呼叫中心产业能力建设管理规范</a><span class="right">2014-7-2</span></li>
-                <li class="odd"><i class="icon"></i><a href="#" class="left">杜主任在中国呼叫中心产业能力建设管理规范</a><span class="right">2014-7-2</span></li>
-            </ul>
-        </div>
-        <div class="right-section">
-            <div class="title clearfix">
-                <h2 class="left">质检新闻</h2>
-                <a href="#" class="right more">>></a>
-            </div>
-            <div class="list style1 clearfix">
-                <img src="/tmp/placeholder.jpg" class="img left" />
-                <ul class="left ul latest">
-                    <li><a href="#" class="">中国呼叫中心产业能力建设管</a><i class=" latest-icon">新</i></li>
-                    <li><a href="#" class="">中国呼叫中心产业能力建设管</a><i class=" latest-icon">新</i></li>
-                    <li><a href="#" class="">中国呼叫中心产业能力建设管</a><i class=" latest-icon">新</i></li>
-                </ul>
-            </div>
-            <ul class="ul clearfix">
-                <li><a href="#">中国呼叫中心产业能力建设管理规划工作组简报----2014/7/2</a></li>
-                <li><a href="#">中国呼叫中心产业能力建设管理规划工作组简报----2014/7/2</a></li>
-            </ul>
-        </div>
-    </section>
+<!--    Change the image source 'images/rick.jpg' with your favourite image.     -->
+    
+    <div class="cover black" data-color="black"></div>
+     
+<!--   You can change the black color for the filter with those colors: blue, green, red, orange       -->
 
-    <section class="section two">
-        <div class="left-section">
-            <div class="title clearfix">
-                <h2 class="left">技术交流</h2>
-                <a href="#" class="right more">>></a>
-            </div>
-            <div class="list style1 clearfix">
-                <img src="/tmp/placeholder.jpg" class="img left" />
-                <ul class="left ul latest">
-                    <li><a href="#" class="">中国呼叫中心产业能力建设管</a><i class=" latest-icon">新</i></li>
-                    <li><a href="#" class="">中国呼叫中心产业能力建设管</a><i class=" latest-icon">新</i></li>
-                    <li><a href="#" class="">中国呼叫中心产业能力建设管</a><i class=" latest-icon">新</i></li>
-                </ul>
-            </div>
-            <ul class="ul clearfix">
-                <li><a href="#">中国呼叫中心产业能力建设管理规划工作组简报----2014/7/2</a></li>
-                <li><a href="#">中国呼叫中心产业能力建设管理规划工作组简报----2014/7/2</a></li>
-            </ul>
-        </div>
-        <div class="center-section">
-            <div class="title achievement clearfix">
-                <h2 class="left">科研成果</h2>
-                <a href="#" class="right more">>></a>
-            </div>
-            <div class="list style2 clearfix">
-                <img src="/images/achievement.png" class="img left" />
-                <ul class="left ul">
-                    <li><a href="#" class="">杜主任在中国呼叫中心产业能力建设管理规范...</a><i class=" latest-icon">新</i></li>
-                    <li><a href="#" class="">杜主任在中国呼叫中心产业能力建设管理规范...</a><i class=" latest-icon">新</i></li>
-                    <li><a href="#" class="">杜主任在中国呼叫中心产业能力建设管理规范...</a><i class=" latest-icon">新</i></li>
-                    <li><a href="#" class="">杜主任在中国呼叫中心产业能力建设管理规范...</a></li>
-                    <li><a href="#" class="">杜主任在中国呼叫中心产业能力建设管理规范...</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="right-section">
-            <div class="title clearfix">
-                <h2 class="left">专题活动</h2>
-                <a href="#" class="right more">>></a>
-            </div>
-            <div class="list style1 clearfix">
-                <img src="/tmp/placeholder.jpg" class="img left" />
-                <ul class="left ul latest">
-                    <li><a href="#" class="">中国呼叫中心产业能力建设管</a><i class=" latest-icon">新</i></li>
-                    <li><a href="#" class="">中国呼叫中心产业能力建设管</a><i class=" latest-icon">新</i></li>
-                    <li><a href="#" class="">中国呼叫中心产业能力建设管</a><i class=" latest-icon">新</i></li>
-                </ul>
-            </div>
-            <ul class="ul clearfix">
-                <li><a href="#">中国呼叫中心产业能力建设管理规划工作组简报----2014/7/2</a></li>
-                <li><a href="#">中国呼叫中心产业能力建设管理规划工作组简报----2014/7/2</a></li>
-            </ul>
-        </div>
-    </section>
+    <div class="container">
+        <h1 class="logo cursive">
+            Komplete
+        </h1>
+<!--  H1 can have 2 designs: "logo" and "logo cursive"           -->
+        
+        <div class="content">
+            <h4 class="motto">A Static Server For PSD to HTML</h4>
+            <div class="subscribe">
+                <p class="info-text">
+                    npm install serve-komplete -g
+                </p>
+                <p class="info-text">
+                    mkdir komplete && cd komplete
+                </p>
+                <p class="info-text">
+                    npm install
+                </p>
+                <p class="info-text">
+                    node index
+                </p>
+                <p class="info-text">
+                    localhost:8080
+                </p>
+                <!--<div class="row">
+                    <div class="col-md-4 col-md-offset-4 col-sm6-6 col-sm-offset-3 ">
+                        <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                            <input type="email" class="form-control transparent" placeholder="Your email here...">
+                          </div>
+                          <button type="submit" class="btn btn-info btn-fill">Notify Me</button>
+                        </form>
 
-    <section class="section three">
-        <div class="left-section">
-            <div class="title">
-                <h2 class="left">法律法规</h2>
-                <a href="#" class="right more">>></a>
-            </div>
-            <div class="list style3 clearfix">
-                <img src="/images/list-style-3.png" class="img left" />
-                <ul class="left ul">
-                    <li><a href="#" class="">计量院在中国呼叫中心产业能力建设...</a></li>
-                    <li><a href="#" class="">计量院在中国呼叫中心产业能力建设...</a></li>
-                    <li><a href="#" class="">计量院在中国呼叫中心产业能力建设...</a></li>
-                    <li><a href="#" class="">计量院在中国呼叫中心产业能力建设...</a></li>
-                    <li><a href="#" class="">计量院在中国呼叫中心产业能力建设...</a></li>
-                </ul>
+                    </div>
+                </div>-->
             </div>
         </div>
-        <div class="center-section">
-            <div class="title">
-                <h2 class="left">特色项目</h2>
-                <a href="#" class="right more">>></a>
-            </div>
-            <div class="list style3 clearfix">
-                <img src="/images/list-style-3.png" class="img left" />
-                <ul class="left ul">
-                    <li><a href="#" class="">杜主任在中国呼叫中心产业能力建设管理规范---2014/7/2</a></li>
-                    <li><a href="#" class="">杜主任在中国呼叫中心产业能力建设管理规范---2014/7/2</a></li>
-                    <li><a href="#" class="">杜主任在中国呼叫中心产业能力建设管理规范---2014/7/2</a></li>
-                    <li><a href="#" class="">杜主任在中国呼叫中心产业能力建设管理规范---2014/7/2</a></li>
-                    <li><a href="#" class="">杜主任在中国呼叫中心产业能力建设管理规范---2014/7/2</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="right-section">
-            <div class="title">
-                <h2 class="left">检测科室</h2>
-                <a href="#" class="right more">>></a>
-            </div>
-            <div class="list style4 clearfix">
-                <img src="/images/list-style-3.png" class="img left" />
-                <ul class="left ul">
-                    <li><q>·</q><a href="#" class="">医疗化工检测科室</a></li>
-                    <li><q>·</q><a href="#" class="">医疗化工检测科室</a></li>
-                    <li><q>·</q><a href="#" class="">医疗化工检测科室</a></li>
-                    <li><q>·</q><a href="#" class="">医疗化工检测科室</a></li>
-                    <li><q>·</q><a href="#" class="">医疗化工检测科室</a></li>
-                    <li><q>·</q><a href="#" class="">医疗化工检测科室</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    </div>
 
-    <section class="section four">
-        <div class="left-section mini-left">
-            <div class="title">
-                <h2 class="left">计量小知识</h2>
-                <a href="#" class="right more">>></a>
-            </div>
-            <div class="list style3 clearfix">
-                <img src="/images/list-style-3.png" class="img left" />
-                <ul class="left ul">
-                    <li><a href="#" class="">计量院在中国呼叫中心产业能力建设...</a></li>
-                    <li><a href="#" class="">计量院在中国呼叫中心产业能力建设...</a></li>
-                    <li><a href="#" class="">计量院在中国呼叫中心产业能力建设...</a></li>
-                    <li><a href="#" class="">计量院在中国呼叫中心产业能力建设...</a></li>
-                    <li><a href="#" class="">计量院在中国呼叫中心产业能力建设...</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="large-right">
-            <div class="title">
-                <h2 class="left">重点实验室</h2>
-                <a href="#" class="right more">>></a>
-            </div>
-            <div class="list style3 clearfix">
-                <img src="/images/list-style-3.png" class="img left" />
-                <ul class="left ul">
-                    <li><a href="#" class="">杜主任在中国呼叫中心产业能力建设管理规范---2014/7/2</a></li>
-                    <li><a href="#" class="">杜主任在中国呼叫中心产业能力建设管理规范---2014/7/2</a></li>
-                    <li><a href="#" class="">杜主任在中国呼叫中心产业能力建设管理规范---2014/7/2</a></li>
-                    <li><a href="#" class="">杜主任在中国呼叫中心产业能力建设管理规范---2014/7/2</a></li>
-                    <li><a href="#" class="">杜主任在中国呼叫中心产业能力建设管理规范---2014/7/2</a></li>
-                </ul>
-                <ul class="menu right">
-                    <li><a href="#" class="active">功能分子材料实验室</a></li>
-                    <li><a href="#">功能分子材料实验室</a></li>
-                    <li><a href="#">功能分子材料实验室</a></li>
-                    <li><a href="#">功能分子材料实验室</a></li>
-                    <li><a href="#">功能分子材料实验室</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <div class="footer">
+      <div class="container">
+             Made by <a href="http://eq.gs/komplete">Komplete</a>. View Docs <a href="docs.html">here</a>
+      </div>
+    </div>
 
-    <section class="section link">
-        <ul>
-            <li><a href=""><img src="/tmp/link.jpg" /></a></li>
-            <li><a href=""><img src="/tmp/link.jpg" /></a></li>
-            <li><a href=""><img src="/tmp/link.jpg" /></a></li>
-        </ul>
-    </section>
-{% endblock %}
+ </div>
+{%- endblock %}
+
 
 {% block footer %}
 {{ super() }}
 {% endblock %}
+
+
