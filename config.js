@@ -6,8 +6,9 @@
 module.exports = {
     port    : 8080,
     index   : ['index.html', 'default.htm', 'default.html'],
-    root    : 'E:/Andrew/serve-komplete/pubilc',
+    root    : 'D:/serve-komplete/public',
     extend  : ['html', 'htm'],
+    dist    : 'dist',
     nunjucks: {
         autoescape      : true,  // (默认值: true) 控制输出是否被转义，查看 Autoescaping
         throwOnUndefined: false, // (default: false) 当输出为 null 或 undefined 会抛出异常
