@@ -1,77 +1,106 @@
 {% extends 'layout.html' %}
-
-{% block title %}{{ title }}{%- endblock %}
-
-{%- block style %}
-{{ super() }}
-<link href="stylesheets/coming-sssoon.css" rel="stylesheet" />
+{% block title %}
+{{ title }}
 {%- endblock %}
+
+{%- block header %}
+{{ super() }}
+    <link rel="stylesheet" href="css/index.css">
+{%- endblock %}
+
 
 
 {% block content %}
-<div class="main" style="background-image: url('images/restaurant.jpg')">
-
-<!--    Change the image source 'images/rick.jpg' with your favourite image.     -->
-    
-    <div class="cover black" data-color="black"></div>
-     
-<!--   You can change the black color for the filter with those colors: blue, green, red, orange       -->
-
+<!-- Intro Section -->
+<section class="intro">
     <div class="container">
-        <h1 class="logo cursive">
-            Komplete
-        </h1>
-<!--  H1 can have 2 designs: "logo" and "logo cursive"           -->
-        
-        <div class="content">
-            <h4 class="motto">A Static Server For PSD to HTML</h4>
-            <div class="subscribe">
-                <p class="info-text">
-                    mkdir komplete && cd komplete
-                </p>
-                <p class="info-text">
-                    npm install serve-komplete --save
-                </p>
-                <p class="info-text">
-                    create config.js file
-                </p>
-                <p class="info-text">
-                    create index.js file
-                </p>
-                <p class="info-text">
-                    node index
-                </p>
-                <p class="info-text">
-                    localhost:8080
-                </p>
-                <!--<div class="row">
-                    <div class="col-md-4 col-md-offset-4 col-sm6-6 col-sm-offset-3 ">
-                        <form class="form-inline" role="form">
-                          <div class="form-group">
-                            <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                            <input type="email" class="form-control transparent" placeholder="Your email here...">
-                          </div>
-                          <button type="submit" class="btn btn-info btn-fill">Notify Me</button>
-                        </form>
-
-                    </div>
-                </div>-->
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <span class="glyphicon glyphicon-apple" style="font-size: 60px"></span>
+                <h2 class="section-heading">Completely synergize resource taxing relationships</h2>
+                <p class="text-light">Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
             </div>
         </div>
     </div>
+</section>
 
-    <div class="footer">
-      <div class="container">
-             Made by <a href="http://eq.gs/komplete">Komplete</a>. View Docs <a href="docs.html">here</a>
-      </div>
+<!-- Content 1 -->
+<section class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="img-responsive img-circle center-block" src="images/microphone.jpg" alt="">
+            </div>
+            <div class="col-sm-6">
+                <h2 class="section-header">Best in Class</h2>
+                <p class="lead text-muted">Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+                <a href="#" class="btn btn-primary btn-lg">Classify It</a>
+            </div>
+
+        </div>
     </div>
+</section>
 
- </div>
-{%- endblock %}
+<!-- Content 2 -->
+<section class="content content-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="section-header">Superior Quality</h2>
+                <p class="lead text-light">Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+                <a href="#" class="btn btn-default btn-lg">Test It</a>
+            </div>
+            <div class="col-sm-6">
+                <img class="img-responsive img-circle center-block" src="images/iphone.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Promos -->
+<div class="container-fluid">
+    <div class="row promo">
+        <a href="#">
+            <div class="col-md-4 promo-item item-1">
+                <h3>
+                    Unleash
+                </h3>
+            </div>
+        </a>
+        <a href="#">
+            <div class="col-md-4 promo-item item-2">
+                <h3>
+                    Synergize
+                </h3>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="col-md-4 promo-item item-3">
+                <h3>
+                    Procrastinate
+                </h3>
+            </div>
+        </a>
+    </div>
+</div><!-- /.container-fluid -->
+
+<!-- Content 3 -->
+<section class="content content-3">
+    <div class="container">
+        <h2 class="section-header"><span class="glyphicon glyphicon-pushpin text-primary"></span><br> Sanity Check</h2>
+        <p class="lead text-muted">Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+        <a href="#" class="btn btn-primary btn-lg">Check Now</a>
+    </div>
+</section>
+
+{% endblock %}
+
 
 
 {% block footer %}
 {{ super() }}
+<script src="js/custom.js"></script>
 {% endblock %}
-
-
+	
