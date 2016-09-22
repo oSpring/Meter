@@ -41,10 +41,10 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
+                    <li {% if navPath === 'index.html' %} class="active" {% endif %}>
                         <a href="index.html">首页</a>
                     </li>
-                    <li>
+                    <li {% if navPath === 'intro.html' %} class="active" {% endif %}>
                         <a href="intro.html">介绍</a>
                     </li>
                     <!--<li class="dropdown">
@@ -55,7 +55,10 @@
                             <li><a href="#">Synergize</a></li>
                         </ul>
                     </li>-->
-                    <li>
+                    <li {% if navPath === 'doc.html' %} class="active" {% endif %}>
+                    <a href="doc.html">文档</a>
+                    </li>
+                    <li {% if navPath === 'about.html' %} class="active" {% endif %}>
                         <a href="about.html">关于</a>
                     </li>
                 </ul>
