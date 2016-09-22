@@ -6,7 +6,7 @@
 module.exports = {
     port    : 8080,  // 访问端口 必须
     index   : ['index.html', 'default.htm', 'default.html'], // 当访问的地址是目录结尾时，默认查找的文件。 可选，默认 'index.html' 和 'default.htm'
-    root    : '', //'D:/serve-komplete/public', // 项目文件所在的目录。可选，默认为 lib 所在目录的 public 目录
+    root    : '', //'D:/serve-komplete/public', // 项目文件所在的目录。可选，默认为 lib 所在目录同级的 public 目录
     extend  : ['html', 'htm'],  // 静态文件扩展名 可选 默认 'html', 'htm'
     exclude : ['layout.html','docs.html'],  // 排除的文件，即访问的时候不生成此文件的完整版本 可选，默认为空
     dist    : 'dist', // 生成的完整的文件所在的路径 root + dist， 可选 默认为 root + '/dist/'
@@ -30,7 +30,4 @@ module.exports = {
         data.title = 'serve-komplete';
         return data;
     }
-    /*data : {
-        a: 'A'
-    }*/
 };
