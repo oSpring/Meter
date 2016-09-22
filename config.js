@@ -28,6 +28,7 @@ module.exports = {
      * */
     data : function(data){
         data.title = 'serve-komplete';
+        data.copyRightDate = (new Date()).getFullYear();
         return data;
     }
 };

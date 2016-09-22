@@ -77,10 +77,6 @@ header .header-content .header-content-inner p {
         max-width: 1000px;
     }
 
-	header .header-content .header-content-inner h1 {
-    	font-size: 100px;
-		}
-
     header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
@@ -204,6 +200,11 @@ header .header-content .header-content-inner p {
 
 .navbar-default .navbar-header .navbar-brand {
     color: yellowgreen;
+    height:50px;
+    padding: 5px 15px;
+}
+.navbar-default .navbar-header .navbar-brand img {
+    height:40px;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,

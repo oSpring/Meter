@@ -3,6 +3,7 @@
 *.iml
 
 .node_modules/
+public/dist/
 
 ## Directory-based project format:
 .idea/

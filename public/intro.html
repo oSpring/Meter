@@ -1,0 +1,115 @@
+{% extends 'layout.html' %}
+{% block title %}
+{{ title }}
+{%- endblock %}
+
+{%- block header %}
+{{ super() }}
+<link rel="stylesheet" href="css/doc.css">
+{%- endblock %}
+
+
+{% block content %}
+
+<div class="bt" id="content">
+    <div class="bw">
+        <h1>介绍</h1>
+        <p>Find out what's included in your Bootstrap theme and how to compile source files. Includes live examples and code snippets for every new component.</p>
+    </div>
+</div>
+<div class="bw docs-content">
+
+    <h1 id="contents">Contents</h1>
+
+    <ul id="markdown-toc" style="">
+        <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#contents" id="markdown-toc-contents">Contents</a></li>
+        <li class="active"><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#intro" id="markdown-toc-intro">Intro</a></li>
+        <li class=""><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#whats-included" id="markdown-toc-whats-included">What’s included</a>
+            <ul>
+                <li class=""><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#getting-started" id="markdown-toc-getting-started">Getting started</a></li>
+                <li class=""><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#gulpfilejs" id="markdown-toc-gulpfilejs">Gulpfile.js</a></li>
+                <li class=""><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#theme-source-code" id="markdown-toc-theme-source-code">Theme source code</a></li>
+            </ul>
+        </li>
+        <li class=""><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#custom-builds" id="markdown-toc-custom-builds">Custom builds</a></li>
+        <li class=""><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#basic-template" id="markdown-toc-basic-template">Basic template</a></li>
+        <li class=""><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#utilities" id="markdown-toc-utilities">Utilities</a>
+            <ul>
+                <li class=""><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#positioning" id="markdown-toc-positioning">Positioning</a></li>
+                <li class=""><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#width" id="markdown-toc-width">Width</a></li>
+                <li class=""><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#margin-and-padding" id="markdown-toc-margin-and-padding">Margin and padding</a></li>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#responsive-text-alignment" id="markdown-toc-responsive-text-alignment">Responsive text alignment</a></li>
+            </ul>
+        </li>
+        <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#components" id="markdown-toc-components">Components</a>
+            <ul>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#entypo" id="markdown-toc-entypo">Entypo</a>
+                    <ul>
+                        <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#available-icons" id="markdown-toc-available-icons">Available icons</a></li>
+                        <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#examples" id="markdown-toc-examples">Examples</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#outline-buttons" id="markdown-toc-outline-buttons">Outline buttons</a></li>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#pill-buttons" id="markdown-toc-pill-buttons">Pill buttons</a></li>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#flex-table" id="markdown-toc-flex-table">Flex table</a></li>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#stat-cards" id="markdown-toc-stat-cards">Stat cards</a></li>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#divided-heading" id="markdown-toc-divided-heading">Divided heading</a></li>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#custom-form-controls" id="markdown-toc-custom-form-controls">Custom form controls</a></li>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#icon-input" id="markdown-toc-icon-input">Icon input</a></li>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#nav-bordered" id="markdown-toc-nav-bordered">Nav bordered</a></li>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#icon-nav" id="markdown-toc-icon-nav">Icon nav</a></li>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#dashhead" id="markdown-toc-dashhead">Dashhead</a></li>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#list-group" id="markdown-toc-list-group">List group</a>
+                    <ul>
+                        <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#list-group-header" id="markdown-toc-list-group-header">List group header</a></li>
+                        <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#list-group-progress" id="markdown-toc-list-group-progress">List group progress</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#custom-modals" id="markdown-toc-custom-modals">Custom Modals</a></li>
+            </ul>
+        </li>
+        <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#plugins" id="markdown-toc-plugins">Plugins</a>
+            <ul>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#tablesorter" id="markdown-toc-tablesorter">Tablesorter</a></li>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#datepicker" id="markdown-toc-datepicker">Datepicker</a></li>
+                <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#chartjs" id="markdown-toc-chartjs">Chart.js</a>
+                    <ul>
+                        <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#data-api" id="markdown-toc-data-api">Data API</a></li>
+                        <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#doughnut" id="markdown-toc-doughnut">Doughnut</a></li>
+                        <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#bar" id="markdown-toc-bar">Bar</a></li>
+                        <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#line" id="markdown-toc-line">Line</a></li>
+                        <li><a href="https://bootstrap-themes.github.io/dashboard/docs/index.html#sparkline" id="markdown-toc-sparkline">Sparkline</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h1 id="intro">介绍</h1>
+
+    <p>Hey there! You’re looking at the docs for an Official Bootstrap Theme—thanks for your purchase! This theme has been lovingly crafted by Bootstrap’s founders and friends to help you build awesome projects on the web. Let’s dive in.</p>
+
+    <p>Each theme is designed as it’s own toolkit—a series of well designed, intuitive, and cohesive components—built on top of Bootstrap. If you’ve used Bootstrap itself, you’ll find this all super familiar, but with new aesthetics, new components, beautiful and extensive examples, and easy-to-use build tools and documentation.</p>
+
+    <p>Since this theme is based on Bootstrap, and includes nearly everything Bootstrap itself does, you’ll want to give the <a href="https://getbootstrap.com/">official project documentation</a> a once over before continuing. There’s also <a href="https://bootstrap-themes.github.io/dashboard/bootstrap/index.html">the kitchen sink</a>—a one-page view of all Bootstrap’s components restyled by this theme.</p>
+
+    <p>For everything else, including compiling and using this Bootstrap theme, read through the docs below.</p>
+
+    <p>Thanks, and enjoy!</p>
+
+    <h1 id="whats-included">What’s included</h1>
+
+    <p>Within your Bootstrap theme you’ll find the following directories and files, grouping common resources and providing both compiled and minified distribution files, as well as raw source files.</p>
+
+
+    <a class="docs-top" href="https://bootstrap-themes.github.io/dashboard/docs/index.html#">Back to top</a>
+</div>
+
+
+{% endblock %}
+
+
+{% block footer %}
+{{ super() }}
+<script src="js/custom.js"></script>
+{% endblock %}
