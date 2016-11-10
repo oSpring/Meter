@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+{% block title %}
+{{ title }}
+{%- endblock %}
+
+{%- block header %}
+{{ super() }}
+    <link rel="stylesheet" href="css/index.css">
+{%- endblock %}
+
+
+
+{% block content %}
+
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>简单的工作，美好的生活</h1>
+            <p>极大地节省开发时间，更多的时间用来更好的生活</p>
+            <a href="doc.html" class="btn btn-primary btn-lg">开始吧</a>
+        </div>
+    </div>
+</header>
+
+<section class="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <span class="glyphicon glyphicon-cloud" style="font-size: 60px"></span>
+                <h2 class="section-heading">页面你来写，其他交给我吧</h2>
+                <p class="text-light">使用模板来开发静态页面，不用再每个页面都写头部尾部啦，还可以自动生成完整的静态页</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+
+
+{% block footer %}
+{{ super() }}
+<script src="js/custom.js"></script>
+{% endblock %}
+	
